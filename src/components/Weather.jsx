@@ -22,10 +22,8 @@ function Weather() {
 
     //get data from api
     const searchLocation = (event) => {
-        if (location === "") {
-            alert("Please enter a location");
-            
-        }
+        event.preventDefault();
+      
         setLoading(true);
         setShow(true);
         if (event.key === "Enter" && location !== "") {
