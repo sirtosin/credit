@@ -45,7 +45,7 @@ const Footer = () => {
             <h3>Email: info@aztechdesign.co</h3>
          </div>
           <div className='my-4 capitalize'>
-            <h3>Address</h3>
+            <h3 className='font-semibold text-lg'>Address</h3>
             <p>1st main bucharest</p>
 
             <p>2nd stage ralfflsen tower,</p>
