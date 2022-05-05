@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@layer base{
+   body{
+    background: rgb(235, 233, 233);
+}
+.title{
+    @apply text-center font-bold text-2xl my-2 font-serif lg:text-4xl
+}
+
+}

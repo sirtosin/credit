@@ -1,25 +1,20 @@
 import React from "react";
-import image from "./assets/bg.png";
-import "./App.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import History from "./components/History";
-import Weather from "./components/Weather";
+import History from "./pages/History";
+import Header from "./components/Header";
+import Home from "./pages/Home";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
-    <main
-      style={{
-        backgroundImage: `url(${image})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }}
-    >
+    <main>
       <BrowserRouter>
+        <Header/>
         <Routes>
-          <Route path="/" element={<Weather />} />
+          <Route path="/" element={<Home />} />
           <Route path="history" element={<History />} />
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </main>
   );
