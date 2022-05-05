@@ -17,19 +17,19 @@ const Vacation = () => {
       <article className='flex flex-col items-center lg:flex-row justify-center'>
         <section className='p-8' >
           <img className='w-[350px] h-[300px] object-cover' src={image} />
-          <div className='w-[200px] h-[100px] bg-white absolute z-40 flex justify-center items-center  mx-8 -mt-[12em] lg:mx-8 xl:mx-20'>
+          <div className='w-[200px] h-[100px] bg-white absolute z-40 flex justify-center items-center  mx-[4em]  -mt-[12em] lg:mx-8 xl:mx-20'>
             <h4 className='text-center m-4 p-2 border  capitalize font-bold font-serif text-lg text-gray-500 hover:border-b-transparent'>beachfront escapes</h4>
           </div>
         </section>
         <section className='p-8' >
           <img className='w-[350px] h-[300px] object-cover' src={image1} />
-          <div className='w-[200px] h-[100px] bg-white absolute z-40 flex justify-center items-center  mx-8 -mt-[12em] lg:mx-8 xl:mx-20'>
+          <div className='w-[200px] h-[100px] bg-white absolute z-40 flex justify-center items-center  mx-[4em] -mt-[12em] lg:mx-8 xl:mx-20'>
             <h4 className='text-center   p-3 border  capitalize font-bold font-serif text-lg text-gray-500 hover:border-b-transparent'> group holidays</h4>
           </div>
         </section>
         <section className='p-8' >
           <img className='w-[350px] h-[300px] object-cover' src={image2} />
-          <div className='w-[200px] h-[100px] bg-white absolute z-40 flex justify-center items-center mx-8 -mt-[12em] lg:mx-8 xl:mx-20'>
+          <div className='w-[200px] h-[100px] bg-white absolute z-40 flex justify-center items-center mx-[4em] -mt-[12em] lg:mx-8 xl:mx-20'>
             <h4 className='text-center  p-5 border  capitalize font-bold font-serif text-lg text-gray-500 hover:border-b-transparent'> city breaks</h4>
           </div>
         </section>

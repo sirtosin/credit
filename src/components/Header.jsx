@@ -6,14 +6,16 @@ const Header = () => {
     const [toggle, setToggle] = useState(false);
 
     const handleToggle = () => {
-        setToggle(!toggle);
+        setToggle(prev => !prev);
     } 
-  
+    const handleClose = () => {
+        setToggle(false);
+    }
 
     return (
         <header className='sticky top-0 left-0 z-50 bg-white shadow p-5 w-full '>
             <nav className='flex items-center justify-around space-x-3 max-w-7xl  mx-auto'>
-                <Link className='px-9 lg:hidden' to='/' onClick={handleToggle}>
+                <Link className=' lg:hidden' to='/' onClick={handleClose}>
                     <img className='w-full' src={image} />
                 </Link>
                 <div className='hidden lg:flex m-0 text-2xl font-serif cursor-pointer '>
@@ -43,20 +45,17 @@ const Header = () => {
             {toggle ?
                 <section className='h-screen mx-auto lg:hidden '>
 
-                    <div className='flex items-center justify-center   flex-col p-8 m-8 space-x-8 text-2xl font-serif' onClick={handleToggle}>
-
-                     
+                    <div className='flex items-center justify-center  flex-col p-8 m-8 space-x-8 text-2xl font-serif' onClick={handleToggle}>
+                        <p/>
                         <Link className='capitalize py-5 text-xl' to=''>
-                            experiences 
+                            contact 
                         </Link>
                         <Link className='capitalize py-5  text-xl' to='history'>
                             history
                         </Link>
                         <Link className='capitalize py-5  text-xl' to=''>
-                            contact
+                            experiences
                         </Link>
-                       
-
                     </div>
                 </section> : null}
         </header>

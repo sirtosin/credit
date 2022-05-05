@@ -1,8 +1,8 @@
 import { render, screen } from '@testing-library/react';
-import Weather from './Weather';
+import Weather from '../src/components/Weather';
 
-test('renders learn react link', () => {
+test('wearher component makes api call with proper params', () => {
   render(<Weather />);
-  const linkElement = screen.getByText(/learn react/i);
+  const linkElement = screen.getByText();
   expect(linkElement).toBeInTheDocument();
 });
