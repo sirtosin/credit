@@ -24,7 +24,6 @@ function Weather() {
     const searchLocation = (event) => {
         setLoading(true);
         setShow(true);
-
         if (event.key === "Enter") {
             setTimeout(async () => {
                 await axios.get(url).then((response) => {
